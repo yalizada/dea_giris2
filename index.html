@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6049e1a6ef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="reguest-box">
+            <div class="title">
+                <div class="greeting">
+                    <h3>
+                        Developiaya xoş gəlmisiniz!
+                    </h3>
+                    <h4>
+                        <span>Hörmətli istifadəçi!</span><br>
+                        "Developia" Mühəndislik Akademiyasının tədris prosesi haqqında məlumat almaq üçün zəhmət
+                        olmasa, aşağıdakı formanı doldurun. Əməkdaşlarımız ən qısa zamanda sizinlə əlaqə saxlayacaq.
+                    </h4>
+                </div>
+                <div class="form">
+                    <form class="reguest-form">
+                        <div class="main-form">
+                            <div class="success-message">
+                                <div>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </div>
+                                <p>Göndərildi!</p>
+                            </div>
+                            <div class="reguired-input">
+                                <label>Ad <span>*</span> </label>
+                                <input type="text" name="name">
+                                <div class="uncorrect name"></div>
+                            </div>
+                            <div class="reguired-input">
+                                <label>Soyad <span>*</span> </label>
+                                <input type="text" name="surname">
+                                <div class="uncorrect surname"></div>
+                            </div>
+                            <div class="reguired-input">
+                                <label>Telefon nömrəsi <span>*</span> </label>
+                                <input type="tel" name="phone" />
+                                <div class="uncorrect phone"></div>
+                            </div>
+                            <div class="reguired-input education-select">
+                                <label>Sizə uyğun təlimi seçin <span>*</span> </label>
+                                <div>
+                                    <select name="category"></select>
+                                    <select name="education" disabled></select>
+                                </div>
+                                <div class="uncorrect education"></div>
+                            </div>
+                            <button type="button" class="hide-btn">
+                                <span>Əlavə seçimlər</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                            <div class="hidden-block">
+                                <div class="schedule">
+                                    <div class="schedule-title">
+                                        <span>Sizə uyğun olan cədvəli seçin</span>
+                                        <div class="help">
+                                            <i class="fa-solid fa-circle-info"></i>
+                                            <p>* Dərsə qoşula biləcəyiniz günləri və saatları seçin.</p>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-form">
+                                        <div class="days-box">
+                                            <p>Gün</p>
+                                            <div class="days"></div>
+                                        </div>
+                                        <div class="hours-box">
+                                            <p>Saat</p>
+                                            <div class="hours"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <label>Email</label>
+                                <input type="email" id="email" name="email"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="example@mail.ru">
+                                <label>Əlavə məlumat</label>
+                                <textarea name="extra" maxlength="200" rows="5"
+                                    placeholder="Başqa necə kömək edə bilərik?"></textarea>
+                            </div>
+                            <button class="submit" type="submit">Göndər</button>
+                        </div>
+                        <div class="minor-form">
+                            <div class="location">
+                                <p>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>
+                                        N.Nərimanov ray, Ə.Rəcəbli küç., Çinar Park Biznes Mərkəzi.
+                                        Bina-6, giriş-2, mərtəbə-6
+                                        Bakı, Azərbaycan Az 1029, Baku
+                                    </span>
+                                </p>
+                                <div>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48608.7254235691!2d49.82290775088192!3d40.407846374157515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403087fef0e167f9%3A0x2d47dbedc1eea9e7!2sChinar%20Park!5e0!3m2!1sru!2s!4v1652091299471!5m2!1sru!2s"
+                                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <div class="address">
+                                    <p>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span>info@developia.az</span>
+                                    </p>
+                                </div>
+                                <div class="social">
+                                    <ul>
+                                        <li class="social-media">
+                                            <a href="https://www.instagram.com/developia.az/">
+                                                <i class="fa-brands fa-instagram-square"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social-media">
+                                            <a href="https://www.facebook.com/developia.az/">
+                                                <i class="fa-brands fa-facebook-square"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social-media">
+                                            <a href="#">
+                                                <i class="fa-brands fa-twitter-square"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-ilustration-shadow">
+            <div class="top-ilustration">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slide-image"></div>
+            <div class="slide-image"></div>
+            <div class="slide-image"></div>
+            <div class="slide-image"></div>
+            <div class="slide-image"></div>
+            <div class="slide-image"></div>
+            <div class="slide-image"></div>
+            <div class="slide-image"></div>
+        </div>
+        <div class="more-info">
+            <div class="about-developia">
+                <div class="about-developia-info content">
+                    <div class="container">
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                    </div>
+                    <div class="developia">
+                        <h2>Developiaya xoş gəlmisiniz!</h2>
+                        <p>2017-ci ilin əvvəllərində aktiv fəaliyyətiyyətə başlayan Developia Mühəndislik Akademiyası
+                            daim
+                            inkişaf edən texnologiyanı yaxından izləyən, mühəndislik və informasiya texnologiyarı
+                            təlimlərinin peşəkar şəkildə tədris edildiyi Azərbaycanın öndə gələn təhsil qurumlarından
+                            biridir. Təlimlərimiz böyük yaş qrupu (16-40 yaş) və uşaq yaş qrupu (9-15 yaş) olmaqla 2
+                            istiqamətdə aparılır.</p>
+                        <p>
+                            Burada sektor ehtiyaclarına istiqamətlənmiş təlimlər peşəkar təlimçilər tərəfindən
+                            beynəlxalq
+                            standartlara əsasən keçirilir.
+                            Təlimçilərimizin rəhbərliyi altında həftə içi və ya həftə sonu təşkil olunan dərslər müasir
+                            avadanlıqlar ilə təchiz olunmuş sinif otaqlarında keçirilir, tələbələrə nəzəri biliklər
+                            qazandırmaqla yanaşı, praktiki və peşə vərdişləri də aşılanır.
+                            Bu yazdıqlarımı "haqqında" bölməsində istifadə etmək olar.
+                        </p>
+                    </div>
+                </div>
+                <div class="comments content">
+                    <div class="comments-container">
+                        <div class="comment">
+                            <div class="comment-content">
+                                <p>Murad Abbasov</p>
+                                <p>Gunumuzun telebatidi. bu cur kurslara telebat boyukdu.</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-content">
+                                <p>Sergey Varin</p>
+                                <p>Developia cox yaxshi yer!!</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-content">
+                                <p>Ramin Əliyev</p>
+                                <p>Dərslər yüksək səviyyədə keçirilir.</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-content">
+                                <p>Fərid Qasımov</p>
+                                <p>Belə bir tədris mərkəzinin olması çox gözəldir.</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-content">
+                                <p>Məmməd Rahid</p>
+                                <p>Azerbaycanda oz imzasi ile taninan akademiya olacaq.</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-content">
+                                <p>Xayyam Sadigov</p>
+                                <p>Отличное место чтобы стать профессионалом !</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-content">
+                                <p>Станислав Агаметов</p>
+                                <p>Hem proqramlashdirma hem de avtomatlashdirma sahesinde kifayet qeder tercubesi olan
+                                    muellimler ve muhendisler, xosh aurasi olan bir muhit</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-content">
+                                <p>Samira Abdullayeva</p>
+                                <p>Her şey super👍. Bele qalmaginiz dileyi ilə.
+                                    "Developia" Mühəndislik Akademiyasının tədris prosesi haqqında məlumat almaq üçün
+                                    üçün
+                                    zəhmət olmasa, aşağıdakı formanı doldurun. Əməkdaşlarımız ən qısa zamanda sizinlə
+                                    əlaqə
+                                    saxlayacaq.</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-content">
+                                <p>Huseynzade Fatime</p>
+                                <p>During the year of study in Developia, we learned a lot of new and interesting
+                                    things.
+                                    Our group is very fun. I like to study here and to all this we have a very good
+                                    teacher
+                                    ;)</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-content">
+                                <p>Аяз Гулиев</p>
+                                <p>Mən Developiyanı sevirəm, çünki çox yaxşı müəllimlər var, orada oxumağı çox sevirəm
+                                </p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-content">
+                                <p>Кязым Аскерли</p>
+                                <p>Очень приятное место. Всегда можно спросить если тебе что то не понятно. Я за все
+                                    время
+                                    проведенное в Девелопии научился многому. Мне очень интересно с ребятами.</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-content">
+                                <p>Абдуллах Алиев</p>
+                                <p>Я интересовался программированием с 7-8 лет и сам учился Scratch. Мои родители решили
+                                    записать меня на курс по программированию. Я очень рад что учусь здесь. Я научился
+                                    создавать сайты, используя JS, jQuery, HTML, CSS и Bootstrap. Спасибо большое всем
+                                    учителям. Спасибо Developia. 🧑🏻‍💻❤️</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-content">
+                                <p>Ramiz Eyyubov</p>
+                                <p>Developia proqramlaşdırma öyrənmək üçün ən yaxşı kursdu, burada mən oyunlar və sayt
+                                    yaratmagı öyrəndim. Burada yaxşı müəllimlər var, hansılar ki, hətta əlavə məşğul
+                                    olurlar
+                                    ki, şagirdlər hər şeyi başa düşsünlər, burada hətta saytları və ya hansısa
+                                    proqramları
+                                    yaratmaq və play store-a onları yerlesdirmeyi öyrənmək olar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions content">
+                    <div class="question-ilustration">
+                        <div>
+                            <div class="element">
+                                <i class="fa fa-question" aria-hidden="true"></i>
+                            </div>
+                            <div class="element">
+                                <i class="fa fa-question" aria-hidden="true"></i>
+                            </div>
+                            <div class="element">
+                                <i class="fa fa-question" aria-hidden="true"></i>
+                            </div>
+                            <i class="fa fa-question big" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="questions-answers">
+                        <p>Burada tez-tez verilən suallara cavab tapa bilərsiniz</p>
+                        <button class="accordion">Uşaqlar proqramlaşdırma kurslarına neçə yaşdan etibarən qəbul
+                            olunur?</button>
+                        <div class="panel">
+                            <p>Uşaqlar üçün nəzərdə tutulmuş proqramlaşdırma təlimlərimizdə etmək üçün 9-14 yaş həddi
+                                nəzərdə tutulub.
+                            </p>
+                        </div>
+
+                        <button class="accordion">Dərslər online keçirilir, yoxsa əyani?</button>
+                        <div class="panel">
+                            <p>Dərslər onlayn şəkildə tədris olunur.</p>
+                        </div>
+
+                        <button class="accordion">Uşaqlar üçün proqramlaşdırma kursunun ödənişi nə qədərdir?</button>
+                        <div class="panel">
+                            <p> Bizə müraciət edən hər bir şəxsə fərdi yanaşıb, həmin şəxsin maddi vəziyyətini nəzərə
+                                alaraq ona invidual qiymət təyin edirik.</p>
+                        </div>
+                        <button class="accordion">Böyük yaş qrupu üçün dərslər saat neçədə keçirilir?</button>
+                        <div class="panel">
+                            <p>Böyük yaş qrupları üçün dərslər adətən axşam saatlarında (19:00-21:00) keçirilir.</p>
+                        </div>
+
+                        <button class="accordion">Sual 2</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="accordion">Sual 3</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <button class="accordion">Sual 1</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="accordion">Sual 2</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <button class="accordion">Sual 3</button>
+                        <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="more-btn">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+        </div>
+        <div class="more-info-btn">
+            <div class="heart-icon">
+                <i class="fa fa-info" aria-hidden="true"></i>
+            </div>
+            <ul>
+                <li class="questions-btn">
+                    <span>Tez-tez verilən suallar</span>
+                    <i class="fa fa-question" aria-hidden="true"></i>
+                </li>
+                <li class="about-btn">
+                    <span>Haqqımızda</span>
+                    <i class="fa fa-info" aria-hidden="true"></i>
+                </li>
+                <li class="comments-btn">
+                    <span>Şərhlər</span>
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+
+</html>
