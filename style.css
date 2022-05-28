@@ -525,50 +525,50 @@ textarea {
   top: 25%;
   left: 20%;
   transform: translate(-20%, -25%);
-  background: url(/img/f1.jpg) center / cover no-repeat;
+  background: url(img/f1.jpg) center / cover no-repeat;
 }
 
 .slide-image:nth-child(2) {
   top: 50%;
   left: 12.5%;
   transform: translate(-50%, -12.5%);
-  background: url(/img/f2.png) center / cover no-repeat;
+  background: url(img/f2.png) center / cover no-repeat;
 }
 
 .slide-image:nth-child(3) {
   top: 75%;
   left: 20%;
-  background: url(/img/f3.png) center / cover no-repeat;
+  background: url(img/f3.png) center / cover no-repeat;
 }
 
 .slide-image:nth-child(4) {
   top: 12.5%;
   left: 50%;
-  background: url(/img/f4.png) center / cover no-repeat;
+  background: url(img/f4.png) center / cover no-repeat;
 }
 
 .slide-image:nth-child(5) {
   top: 87.5%;
   left: 50%;
-  background: url(/img/f5.png) center / cover no-repeat;
+  background: url(img/f5.png) center / cover no-repeat;
 }
 
 .slide-image:nth-child(6) {
   top: 25%;
   left: 80%;
-  background: url(/img/f1.jpg) center / cover no-repeat;
+  background: url(img/f1.jpg) center / cover no-repeat;
 }
 
 .slide-image:nth-child(7) {
   top: 50%;
   left: 87.5%;
-  background: url(/img/f6.png) center / cover no-repeat;
+  background: url(img/f6.png) center / cover no-repeat;
 }
 
 .slide-image:nth-child(8) {
   top: 75%;
   left: 80%;
-  background: url(/img/f7.png) center / cover no-repeat;
+  background: url(img/f7.png) center / cover no-repeat;
 }
 
 .title {
@@ -782,31 +782,31 @@ textarea {
 }
 
 .slide:nth-child(1) {
-  background: url(/img/f1.jpg) center / contain no-repeat;
+  background: url(img/f1.jpg) center / contain no-repeat;
 }
 
 .slide:nth-child(2) {
-  background: url(/img/f2.png) center / cover no-repeat;
+  background: url(img/f2.png) center / cover no-repeat;
 }
 
 .slide:nth-child(3) {
-  background: url(/img/f3.png) center / cover no-repeat;
+  background: url(img/f3.png) center / cover no-repeat;
 }
 
 .slide:nth-child(4) {
-  background: url(/img/f4.png) center / cover no-repeat;
+  background: url(img/f4.png) center / cover no-repeat;
 }
 
 .slide:nth-child(5) {
-  background: url(/img/f5.png) center / cover no-repeat;
+  background: url(img/f5.png) center / cover no-repeat;
 }
 
 .slide:nth-child(6) {
-  background: url(/img/f6.png) center / cover no-repeat;
+  background: url(img/f6.png) center / cover no-repeat;
 }
 
 .slide:nth-child(7) {
-  background: url(/img/f7.png) center / cover no-repeat;
+  background: url(img/f7.png) center / cover no-repeat;
 }
 
 .comments {
